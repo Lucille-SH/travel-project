@@ -1,0 +1,12 @@
+:root {
+  --heading-font: "Lemon", serif;
+  --default-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font);
+}
+
+h1 {
+  font-family: var(--heading-font);
+}
