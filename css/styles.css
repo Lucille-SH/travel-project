@@ -56,7 +56,7 @@ body {
   padding: 120px 100px;
 }
 
-.grid-3-columns {
+.grid-3-columns-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
   background: linear-gradient(rgba(1, 59, 72, 0.9), rgba(1, 59, 72, 0.9)),
     url("../images/youghal-footer.jpeg");
@@ -65,13 +65,28 @@ body {
   background-position: center;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 50px 0;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
 
-.main-image {
+.responsive-img {
   width: 100%;
   filter: brightness(120%) contrast(70%) sepia(20%);
+}
+
+.responsive-img-2 {
+  width: 50%;
+}
+
+main h2 {
+  font-size: 40px;
+  padding: 10px 0 0;
+  margin: 0 0 15px 0;
 }
 
 main h4 {
@@ -83,10 +98,8 @@ main h4 {
   margin: 0;
 }
 
-main h2 {
-  font-size: 40px;
-  padding: 0;
-  margin: 0 0 15px 0;
+main h5 {
+  margin-bottom: 0;
 }
 
 main p {
@@ -94,10 +107,65 @@ main p {
   font-weight: 300;
   color: rgba(7, 7, 7, 0.7);
   line-height: 1.5;
+  padding-bottom: 10px;
+}
+
+main .secondary-section {
+  background: #f8f8f8;
+}
+
+.secondary-section {
+  padding: 100px;
+}
+
+.secondary-section h2,
+.secondary-section h4 {
+  text-align: center;
+}
+
+.card {
+  background: white;
+}
+
+.img-map-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.card-btn-container {
+  margin-top: 50px;
+}
+
+.card-content {
+  padding: 30px;
+}
+
+.card-btn {
+  color: white;
+  background-color: #272044;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
 }
 
 .footer-column h3 {
   color: white;
+}
+
+.footer-column h3 {
+  font-size: 20px;
 }
 
 .footer-column p,
@@ -126,12 +194,14 @@ main p {
     grid-gap: 30px;
   }
 
-  .grid-3-columns {
-    grid-template-columns: 1fr 2fr;
+  .grid-3-columns,
+  .grid-2-columns,
+  .grid-3-columns-first-narrow {
+    grid-template-columns: 1fr;
   }
 
-  .grid-2-columns {
-    grid-template-columns: 1fr;
+  .grid-3-columns {
+    padding: 20px 0;
   }
 }
 
@@ -153,7 +223,7 @@ main p {
     font-size: 30px;
   }
 
-  .grid-3-columns {
-    grid-template-columns: 1fr;
+  .secondary-section {
+    padding: 50px 20px;
   }
 }
