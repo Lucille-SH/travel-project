@@ -8,7 +8,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(1, 59, 72, 0.6), rgba(1, 59, 72, 0.6)),
     url("../images/background-hero.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,7 +50,54 @@ body {
   letter-spacing: 2.5px;
 }
 
-@media (max-width: 900px) {
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-gap: 50px;
+  padding: 120px 100px;
+  background: linear-gradient(rgba(1, 59, 72, 0.9), rgba(1, 59, 72, 0.9)),
+    url("../images/youghal_town_harbour.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .footer-column {
+  padding: 20px;
+} */
+
+.footer-column h3 {
+  color: white;
+}
+
+.footer-column p,
+.youghal-links {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-column p {
+  line-height: 1.8;
+}
+
+.youghal-links {
+  text-decoration: none;
+  line-height: 2;
+}
+
+.youghal-links:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .footer-grid {
+    grid-template-columns: 1fr 2fr;
+    padding: 120px 50px;
+  }
+}
+
+@media (max-width: 960px) {
   .hero h1 {
     font-size: 50px;
     margin-bottom: 20px;
@@ -62,5 +109,9 @@ body {
 
   .hero h2 {
     font-size: 25px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
