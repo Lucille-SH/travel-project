@@ -70,6 +70,10 @@ body {
   padding: 50px 0;
 }
 
+.insta-grid {
+  text-align: center;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
@@ -81,6 +85,11 @@ body {
 
 .responsive-img-2 {
   width: 50%;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 
 main h2 {
@@ -114,12 +123,12 @@ main .secondary-section {
   background: #f8f8f8;
 }
 
-.secondary-section {
+.section-2-3 {
   padding: 100px;
 }
 
-.secondary-section h2,
-.secondary-section h4 {
+.section-2-3 h2,
+.section-2-3 h4 {
   text-align: center;
 }
 
@@ -184,6 +193,11 @@ main .secondary-section {
   line-height: 2;
 }
 
+blockquote {
+  display: block;
+  margin: 0 auto;
+}
+
 .youghal-links:hover {
   text-decoration: underline;
 }
@@ -223,7 +237,7 @@ main .secondary-section {
     font-size: 30px;
   }
 
-  .secondary-section {
+  .section-2-3 {
     padding: 50px 20px;
   }
 }
