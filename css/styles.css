@@ -50,21 +50,51 @@ body {
   letter-spacing: 2.5px;
 }
 
-.footer-grid {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 50px;
   padding: 120px 100px;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
   background: linear-gradient(rgba(1, 59, 72, 0.9), rgba(1, 59, 72, 0.9)),
-    url("../images/youghal_town_harbour.jpeg");
+    url("../images/youghal-footer.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-/* .footer-column {
-  padding: 20px;
-} */
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-image {
+  width: 100%;
+  filter: brightness(120%) contrast(70%) sepia(20%);
+}
+
+main h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgba(7, 7, 7, 0.3);
+  letter-spacing: 2.5px;
+  margin: 0;
+}
+
+main h2 {
+  font-size: 40px;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+main p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(7, 7, 7, 0.7);
+  line-height: 1.5;
+}
 
 .footer-column h3 {
   color: white;
@@ -91,9 +121,17 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .footer-grid {
+  .grid {
+    padding: 100px 50px;
+    grid-gap: 30px;
+  }
+
+  .grid-3-columns {
     grid-template-columns: 1fr 2fr;
-    padding: 120px 50px;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -111,7 +149,11 @@ body {
     font-size: 25px;
   }
 
-  .footer-grid {
+  main h2 {
+    font-size: 30px;
+  }
+
+  .grid-3-columns {
     grid-template-columns: 1fr;
   }
 }
