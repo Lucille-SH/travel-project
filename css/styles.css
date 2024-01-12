@@ -65,13 +65,17 @@ body {
   background-position: center;
 }
 
+.insta-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 50px 0;
-}
-
-.insta-grid {
-  text-align: center;
 }
 
 .grid-2-columns {
@@ -203,6 +207,10 @@ blockquote {
 }
 
 @media (max-width: 1200px) {
+  .hero {
+    padding: 190px 0 200px;
+  }
+
   .grid {
     padding: 100px 50px;
     grid-gap: 30px;
@@ -210,12 +218,17 @@ blockquote {
 
   .grid-3-columns,
   .grid-2-columns,
-  .grid-3-columns-first-narrow {
+  .grid-3-columns-first-narrow,
+  .insta-grid {
     grid-template-columns: 1fr;
   }
 
   .grid-3-columns {
     padding: 20px 0;
+  }
+
+  .insta-grid {
+    padding: 0;
   }
 }
 
